@@ -8,12 +8,14 @@ export default authMiddleware({
     "/api/webhook/stripe",
     "/api/uploadthing",
     "/assets/images/logo.svg",
+    "/favicon.ico",
   ],
   ignoredRoutes: [
     "/api/webhook/clerk",
     "/api/webhook/stripe",
     "/api/uploadthing",
     "/assets/images/logo.svg",
+    "/favicon.ico",
   ],
 });
 
