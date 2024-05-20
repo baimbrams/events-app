@@ -1,6 +1,6 @@
 import CheckoutButton from "@/components/shared/CheckoutButton";
 import Collection from "@/components/shared/Collection";
-// import Collection from "@/components/shared/Collection";
+
 import {
   getEventById,
   getRelatedEventsByCategory,
