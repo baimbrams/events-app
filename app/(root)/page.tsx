@@ -4,6 +4,7 @@ import Image from "next/image";
 import Collection from "@/components/shared/Collection";
 import { getAllEvents } from "@/lib/actions/event.actions";
 import { SearchParamProps } from "@/types";
+import HeroImage from "@/public/assets/images/hero.png";
 
 export default async function Home({ searchParams }: SearchParamProps) {
   const page = Number(searchParams?.page) || 1;
@@ -33,7 +34,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
             </Button>
           </div>
           <Image
-            src="/assets/images/hero.png"
+            src={HeroImage}
             alt="hero"
             width={1000}
             height={1000}
