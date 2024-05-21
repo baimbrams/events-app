@@ -1,5 +1,9 @@
 import CheckoutButton from "@/components/shared/CheckoutButton";
 import Collection from "@/components/shared/Collection";
+import Calendar from "@/public/assets/icons/calendar.svg";
+import Dollar from "@/public/assets/icons/dollar.svg";
+import Location from "@/public/assets/icons/location-grey.svg";
+import link from "@/public/assets/icons/link.svg";
 
 import {
   getEventById,
@@ -60,12 +64,7 @@ const EventDetails = async ({
 
             <div className="flex flex-col gap-5">
               <div className="flex gap-2 md:gap-3">
-                <Image
-                  src="/assets/icons/calendar.svg"
-                  alt="calendar"
-                  width={32}
-                  height={32}
-                />
+                <Image src={Calendar} alt="calendar" width={32} height={32} />
                 <div className="p-medium-16 lg:p-regular-20 flex flex-wrap items-center">
                   <p>
                     {formatDateTime(event.startDateTime).dateOnly} -{" "}
@@ -79,12 +78,7 @@ const EventDetails = async ({
               </div>
 
               <div className="p-regular-20 flex items-center gap-3">
-                <Image
-                  src="/assets/icons/location.svg"
-                  alt="location"
-                  width={32}
-                  height={32}
-                />
+                <Image src={Location} alt="location" width={32} height={32} />
                 <p className="p-medium-16 lg:p-regular-20">{event.location}</p>
               </div>
             </div>
