@@ -6,6 +6,10 @@ import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useUploadThing } from "@/lib/uploadthing";
+import Calendar from "@/public/assets/icons/calendar.svg";
+import Dollar from "@/public/assets/icons/dollar.svg";
+import Location from "@/public/assets/icons/location-grey.svg";
+import link from "@/public/assets/icons/link.svg";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -164,7 +168,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                 <FormControl>
                   <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-grey-50 px-4 py-2">
                     <Image
-                      src="/assets/icons/location-grey.svg"
+                      src={Location}
                       alt="calendar"
                       width={24}
                       height={24}
@@ -192,7 +196,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                 <FormControl>
                   <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-grey-50 px-4 py-2">
                     <Image
-                      src="/assets/icons/calendar.svg"
+                      src={Calendar}
                       alt="calendar"
                       width={24}
                       height={24}
@@ -224,7 +228,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                 <FormControl>
                   <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-grey-50 px-4 py-2">
                     <Image
-                      src="/assets/icons/calendar.svg"
+                      src={Calendar}
                       alt="calendar"
                       width={24}
                       height={24}
@@ -258,7 +262,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                 <FormControl>
                   <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-grey-50 px-4 py-2">
                     <Image
-                      src="/assets/icons/dollar.svg"
+                      src={Dollar}
                       alt="dollar"
                       width={24}
                       height={24}
@@ -308,12 +312,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
               <FormItem className="w-full">
                 <FormControl>
                   <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-grey-50 px-4 py-2">
-                    <Image
-                      src="/assets/icons/link.svg"
-                      alt="link"
-                      width={24}
-                      height={24}
-                    />
+                    <Image src={link} alt="link" width={24} height={24} />
 
                     <Input
                       placeholder="Link"
